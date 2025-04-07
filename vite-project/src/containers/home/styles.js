@@ -15,6 +15,12 @@ export const ContainerNav = styled.div`
   justify-content: space-around;
   align-items: center;
   padding: 0.5em;
+
+  &:hover ${Svg} ${Rect} {
+    transition: 999999s;
+    stroke-dashoffset: 1;
+    stroke-dasharray: 0;
+  }
 `;
 
 export const BntNav = styled.div`
@@ -26,6 +32,41 @@ export const BntNav = styled.div`
   &:hover {
     background: #fff3;
   }
+
+  &:nth-child(1):hover ~ ${Svg} ${Rect} {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 2 8 73.3 8 10.7;
+  }
+  &:nth-child(2):hover ~ ${Svg} ${Rect} {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 12.6 9.5 49.3 9.5 31.6;
+  }
+  &:nth-child(3):hover ~ ${Svg} ${Rect} {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 24.5 8.5 27.5 8.5 55.5;
+  }
+  &:nth-child(4):hover ~ ${Svg} ${Rect} {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 34.7 6.9 10.2 6.9 76;
+  }
+  &:hover ~ ${Svg} ${Rect} {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 0 10 40 10 40;
+    transition: 0.5s !important;
+  }
+`;
+
+export const Svg = styled.svg`
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+`;
+
+export const Rect = styled.rect`
+  stroke-dashoffset: 5;
+  stroke-dasharray: 0 0 10 40 10 40;
+  transition: 0.5s;
+  stroke: #fff;
 `;
 
 export const Title = styled.h1`
