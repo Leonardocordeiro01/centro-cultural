@@ -6,6 +6,19 @@ export const Nav = styled.div`
   height: 60px;
 `;
 
+export const Svg = styled.svg`
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+`;
+
+export const Rect = styled.rect`
+  stroke-dashoffset: 5;
+  stroke-dasharray: 0 0 10 40 10 40;
+  transition: 0.5s;
+  stroke: #000;
+`;
+
 export const ContainerNav = styled.div`
   position: absolute;
   inset: 0;
@@ -25,7 +38,7 @@ export const ContainerNav = styled.div`
 
 export const BntNav = styled.div`
   padding: 0.5em 1.5em;
-  color: #fff;
+  color: #000000;
   cursor: pointer;
   transition: 0.1s;
 
@@ -54,19 +67,6 @@ export const BntNav = styled.div`
     stroke-dasharray: 0 0 10 40 10 40;
     transition: 0.5s !important;
   }
-`;
-
-export const Svg = styled.svg`
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-`;
-
-export const Rect = styled.rect`
-  stroke-dashoffset: 5;
-  stroke-dasharray: 0 0 10 40 10 40;
-  transition: 0.5s;
-  stroke: #fff;
 `;
 
 export const Title = styled.h1`

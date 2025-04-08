@@ -19,6 +19,7 @@ function Home() {
           <BntNav>FAQ</BntNav>
           <Svg
             overflow="visible"
+            color="red"
             width="400"
             height="60"
             viewBox="0 0 400 60"
@@ -26,12 +27,13 @@ function Home() {
           >
             <Rect
               pathLength="100"
+              color="red"
               x="0"
               y="0"
               width="400"
-              hengt="60"
+              height="60"
               fill="transparent"
-              stroke-width="5"
+              strokeWidth="5"
             ></Rect>
           </Svg>
         </ContainerNav>
