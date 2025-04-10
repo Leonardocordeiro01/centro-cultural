@@ -4,18 +4,24 @@ import { NavButton } from "./styles";
 import { Svg } from "./styles";
 import { Rect } from "./styles";
 import { Title } from "./styles";
+import { SmallerTitle } from "./styles";
 import { SubTitle } from "./styles";
+import { Text } from "./styles";
 import { IntroSection } from "./styles";
 import { ScreenHalf } from "./styles";
-import { SectionTexto } from "./styles";
+import { ImgHalf } from "./styles";
+import { SectionText } from "./styles";
+import HomeCasaC from "./img/casacultura.png";
+import BandeiraTcheca from "./img/bandeiratcheca.png";
 
 function Home() {
   return (
     <div>
-      <SectionTexto>
+      <SectionText>
+        <img src={BandeiraTcheca} alt="" />
         <Title>Centro Cultural</Title>
         <SubTitle>Ludmila Amalia Batova Arambasic</SubTitle>
-      </SectionTexto>
+      </SectionText>
       <Nav>
         <ContainerNav>
           <NavButton>HOME</NavButton>
@@ -43,14 +49,19 @@ function Home() {
       </Nav>
       <IntroSection>
         <ScreenHalf>
-          <Title>Centro Cultural Ludmila Amalia Batova Arambasic</Title>
+          <SmallerTitle>
+            Bem-vindo ao site do Centro Cultural de Lídice
+          </SmallerTitle>
+          <Text>
+            O Centro Cultura de Lídice é um espaço dedicado à preservação da
+            memória e promoção da cultura local. Aqui, você encontra exposições
+            sobre a história do distrito, uma biblioteca pública distrital e
+            diversas atividades culturais e sociais oferecidas à comunidade.
+          </Text>
         </ScreenHalf>
-        <ScreenHalf>
-          <img
-            src="C:\Users\leona\OneDrive\Documentos\GitHub\centro cultural\vite-project\public\logo casa da cultura.png"
-            alt=""
-          />
-        </ScreenHalf>
+        <ImgHalf>
+          <img src={HomeCasaC} />
+        </ImgHalf>
       </IntroSection>
     </div>
   );

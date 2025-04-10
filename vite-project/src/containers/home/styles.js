@@ -22,7 +22,6 @@ export const Rect = styled.rect`
 export const ContainerNav = styled.div`
   position: absolute;
   inset: 0;
-  background: #009688;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -71,29 +70,61 @@ export const NavButton = styled.div`
 
 export const Title = styled.h1`
   color: #212121;
+  z-index: 2;
+`;
+
+export const SmallerTitle = styled.h2`
+  color: #212121;
 `;
 
 export const SubTitle = styled.h3`
+  color: #212121;
+  z-index: 2;
+`;
+
+export const Text = styled.h3`
   color: #212121;
 `;
 
 export const IntroSection = styled.div`
   display: flex;
   flex-direction: row;
+  align-content: center;
+  justify-content: center;
   align-items: center;
   background: #f5f5f5;
-  color: black;
+  padding: 10px 0 10px 0;
+  gap: 30px;
 `;
 
 export const ScreenHalf = styled.div`
   width: 50%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
 `;
 
-export const SectionTexto = styled.section`
+export const ImgHalf = styled.div`
+  width: auto;
+  height: 70vh;
+  display: flex;
+  padding: 0;
+`;
+
+export const SectionText = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: #f5f5f5;
   padding: 10px 0 15px 0;
+
+  & img {
+    width: 100vw;
+    height: 30vh;
+    position: absolute;
+    z-index: 0;
+  }
 `;
