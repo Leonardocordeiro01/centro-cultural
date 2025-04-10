@@ -13,6 +13,7 @@ p {
 
 h1 {
     font-size: 50px;
+    color: #212121;
 }
 
 h2 {

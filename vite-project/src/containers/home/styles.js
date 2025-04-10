@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Nav = styled.div`
   position: relative;
-  width: 400px;
+  width: 100%;
   height: 60px;
 `;
 
@@ -22,10 +22,10 @@ export const Rect = styled.rect`
 export const ContainerNav = styled.div`
   position: absolute;
   inset: 0;
-  background: #bef6;
+  background: #009688;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 0.5em;
 
@@ -36,7 +36,7 @@ export const ContainerNav = styled.div`
   }
 `;
 
-export const BntNav = styled.div`
+export const NavButton = styled.div`
   padding: 0.5em 1.5em;
   color: #000000;
   cursor: pointer;
@@ -48,19 +48,19 @@ export const BntNav = styled.div`
 
   &:nth-child(1):hover ~ ${Svg} ${Rect} {
     stroke-dashoffset: 0;
-    stroke-dasharray: 0 2 8 73.3 8 10.7;
+    stroke-dasharray: 0 0 8.3 77.3 9 345;
   }
   &:nth-child(2):hover ~ ${Svg} ${Rect} {
     stroke-dashoffset: 0;
-    stroke-dasharray: 0 12.6 9.5 49.3 9.5 31.6;
+    stroke-dasharray: 0 8.9 11.3 53.6 11.8 61.5;
   }
   &:nth-child(3):hover ~ ${Svg} ${Rect} {
     stroke-dashoffset: 0;
-    stroke-dasharray: 0 24.5 8.5 27.5 8.5 55.5;
+    stroke-dasharray: 0 20.5 12.5 28 12.8 73;
   }
   &:nth-child(4):hover ~ ${Svg} ${Rect} {
     stroke-dashoffset: 0;
-    stroke-dasharray: 0 34.7 6.9 10.2 6.9 76;
+    stroke-dasharray: 0 33.5 11.1 5.15 11.2 91;
   }
   &:hover ~ ${Svg} ${Rect} {
     stroke-dashoffset: 0;
@@ -70,23 +70,30 @@ export const BntNav = styled.div`
 `;
 
 export const Title = styled.h1`
-  color: black;
+  color: #212121;
 `;
 
-export const DivInicial = styled.div`
+export const SubTitle = styled.h3`
+  color: #212121;
+`;
+
+export const IntroSection = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: rgb(243, 212, 212);
+  background: #f5f5f5;
   color: black;
 `;
 
-export const MetadaDaTela = styled.div`
+export const ScreenHalf = styled.div`
   width: 50%;
 `;
 
 export const SectionTexto = styled.section`
   display: flex;
   align-items: center;
-  background-color: rgb(243, 212, 212);
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 10px 0 15px 0;
 `;
