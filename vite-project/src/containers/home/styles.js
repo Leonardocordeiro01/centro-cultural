@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Nav = styled.div`
+  margin-top: 50px;
   position: relative;
   width: 100%;
-  height: 60px;
+  height: 50px;
 `;
 
 export const Svg = styled.svg`
@@ -27,6 +28,7 @@ export const ContainerNav = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0.5em;
+  background: #f5f5f5;
 
   &:hover ${Svg} ${Rect} {
     transition: 999999s;
@@ -93,7 +95,6 @@ export const IntroSection = styled.div`
   justify-content: center;
   align-items: center;
   background: #f5f5f5;
-  padding: 10px 0 10px 0;
   gap: 30px;
 `;
 
@@ -117,14 +118,14 @@ export const SectionText = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
   background-color: #f5f5f5;
-  padding: 10px 0 15px 0;
+  gap: 8px;
 
   & img {
     width: 100vw;
-    height: 30vh;
+    height: auto;
     position: absolute;
+    opacity: 0.7;
     z-index: 0;
   }
 `;

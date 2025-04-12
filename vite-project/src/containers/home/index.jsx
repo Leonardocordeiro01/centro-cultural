@@ -12,7 +12,7 @@ import { ScreenHalf } from "./styles";
 import { ImgHalf } from "./styles";
 import { SectionText } from "./styles";
 import HomeCasaC from "./img/casacultura.png";
-import BandeiraTcheca from "./img/bandeiratcheca.png";
+import BandeiraTcheca from "./img/bandeirastb.png";
 
 function Home() {
   return (
@@ -40,7 +40,7 @@ function Home() {
               x="0"
               y="0"
               width="470"
-              height="60"
+              height="49"
               fill="transparent"
               strokeWidth="5"
             ></Rect>
