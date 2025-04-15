@@ -7,17 +7,21 @@ const myGlobalStyles = createGlobalStyle`
     box-sizing: border-box; 
 }
 
+body {
+    background: #f5f5f5;
+}
+
 p {
-    font-size: 20px;
+    font-size: 0.20rem;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 3rem;
     color: #212121;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
 }`;
 
 export default myGlobalStyles;

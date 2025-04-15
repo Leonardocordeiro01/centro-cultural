@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import BandeiraTcheca from "./img/bandeirastb.png";
 
 export const Nav = styled.div`
-  margin-top: 50px;
   position: relative;
   width: 100%;
   height: 50px;
@@ -49,19 +49,19 @@ export const NavButton = styled.div`
 
   &:nth-child(1):hover ~ ${Svg} ${Rect} {
     stroke-dashoffset: 0;
-    stroke-dasharray: 0 0 8.3 77.3 9 345;
+    stroke-dasharray: 0 0 8.9 77.3 9 345;
   }
   &:nth-child(2):hover ~ ${Svg} ${Rect} {
     stroke-dashoffset: 0;
-    stroke-dasharray: 0 8.9 11.3 53.6 11.8 61.5;
+    stroke-dasharray: 0 8.9 12 53.6 11.8 61.5;
   }
   &:nth-child(3):hover ~ ${Svg} ${Rect} {
     stroke-dashoffset: 0;
-    stroke-dasharray: 0 20.5 12.5 28 12.8 73;
+    stroke-dasharray: 0 20.5 13.2 28 12.8 73;
   }
   &:nth-child(4):hover ~ ${Svg} ${Rect} {
     stroke-dashoffset: 0;
-    stroke-dasharray: 0 33.5 11.1 5.15 11.2 91;
+    stroke-dasharray: 0 33.5 11.6 5.15 11.2 91;
   }
   &:hover ~ ${Svg} ${Rect} {
     stroke-dashoffset: 0;
@@ -115,17 +115,31 @@ export const ImgHalf = styled.div`
 `;
 
 export const SectionText = styled.section`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: #f5f5f5;
+  position: relative;
   gap: 8px;
+  background-image: url(${BandeiraTcheca});
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  align-items: center;
+  text-align: center;
+  height: 23vh;
+  padding: 1%;
 
-  & img {
-    width: 100vw;
-    height: auto;
+  &::before {
+    content: "";
     position: absolute;
-    opacity: 0.7;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.3);
     z-index: 0;
+  }
+
+  h1,
+  h3 {
+    position: relative;
+    z-index: 1;
   }
 `;

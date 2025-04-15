@@ -12,13 +12,11 @@ import { ScreenHalf } from "./styles";
 import { ImgHalf } from "./styles";
 import { SectionText } from "./styles";
 import HomeCasaC from "./img/casacultura.png";
-import BandeiraTcheca from "./img/bandeirastb.png";
 
 function Home() {
   return (
     <div>
       <SectionText>
-        <img src={BandeiraTcheca} alt="" />
         <Title>Centro Cultural</Title>
         <SubTitle>Ludmila Amalia Batova Arambasic</SubTitle>
       </SectionText>
