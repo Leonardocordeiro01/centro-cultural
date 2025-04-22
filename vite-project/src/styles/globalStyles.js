@@ -12,7 +12,7 @@ body {
 }
 
 p {
-    font-size: 0.20rem;
+    font-size: 1rem;
 }
 
 h1 {

@@ -1,8 +1,3 @@
-import { Nav } from "./styles";
-import { ContainerNav } from "./styles";
-import { NavButton } from "./styles";
-import { Svg } from "./styles";
-import { Rect } from "./styles";
 import { Title } from "./styles";
 import { SmallerTitle } from "./styles";
 import { SubTitle } from "./styles";
@@ -10,41 +5,21 @@ import { Text } from "./styles";
 import { IntroSection } from "./styles";
 import { ScreenHalf } from "./styles";
 import { ImgHalf } from "./styles";
+import { Sectionflag } from "./styles";
 import { SectionText } from "./styles";
 import HomeCasaC from "./img/casacultura.png";
+import Fenix from "./img/ChatGPT Image Apr 21, 2025, 11_35_34 AM (1).png";
+import { DivImgFenix } from "./styles";
+import Navbar from "../../components/NavBar";
 
 function Home() {
   return (
     <div>
-      <SectionText>
+      <Sectionflag>
         <Title>Centro Cultural</Title>
         <SubTitle>Ludmila Amalia Batova Arambasic</SubTitle>
-      </SectionText>
-      <Nav>
-        <ContainerNav>
-          <NavButton>HOME</NavButton>
-          <NavButton>PROJETOS</NavButton>
-          <NavButton>SOBRE NÓS</NavButton>
-          <NavButton>CONTATO</NavButton>
-          <Svg
-            overflow="visible"
-            width="100%"
-            height="60"
-            viewBox="0 0 470 60"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <Rect
-              pathLength="100"
-              x="0"
-              y="0"
-              width="470"
-              height="49"
-              fill="transparent"
-              strokeWidth="5"
-            ></Rect>
-          </Svg>
-        </ContainerNav>
-      </Nav>
+      </Sectionflag>
+      <Navbar />
       <IntroSection>
         <ScreenHalf>
           <SmallerTitle>
@@ -61,6 +36,37 @@ function Home() {
           <img src={HomeCasaC} />
         </ImgHalf>
       </IntroSection>
+      <SectionText>
+        <DivImgFenix>
+          <img src={Fenix} />
+        </DivImgFenix>
+
+        <ScreenHalf>
+          <h1>História de Lídice</h1>
+          <p>
+            Originalmente chamada Santo Antônio do Capivari, a localidade foi
+            rebatizada como Lídice em 1944, em homenagem à vila tcheca de mesmo
+            nome que foi destruída pelos nazistas durante a Segunda Guerra
+            Mundial. Esse gesto simbólico foi adotado por diversos países
+            aliados, incluindo o Brasil, para manter viva a memória da tragédia
+            e homenagear as vítimas.
+          </p>
+          <p>
+            Na praça central de Lídice, há uma estátua da Fênix, simbolizando o
+            renascimento e a resistência diante da destruição. O distrito também
+            abriga o Colégio Estadual Presidente Benes, em homenagem a Edvard
+            Beneš, presidente da Tchecoslováquia durante o período da guerra.
+          </p>
+        </ScreenHalf>
+      </SectionText>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4098.448336865453!2d-44.19804922425647!3d-22.8353259793055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c3bdcea8cafe1%3A0x9722b04f5954be4c!2sCasa%20da%20Cultura!5e1!3m2!1spt-BR!2sbr!4v1745259454000!5m2!1spt-BR!2sbr"
+        width="100%"
+        height="170"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
   );
 }
