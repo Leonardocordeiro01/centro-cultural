@@ -1,37 +1,7 @@
-import { Nav } from "./styles";
-import { ContainerNav } from "./styles";
-import { NavButton } from "./styles";
-import { Svg } from "./styles";
-import { Rect } from "./styles";
-
 function Projetos() {
   return (
     <div>
-      <Nav>
-        <ContainerNav>
-          <NavButton>HOME</NavButton>
-          <NavButton>PROJETOS</NavButton>
-          <NavButton>SOBRE NÓS</NavButton>
-          <NavButton>CONTATO</NavButton>
-          <Svg
-            overflow="visible"
-            width="100%"
-            height="60"
-            viewBox="0 0 470 60"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <Rect
-              pathLength="100"
-              x="0"
-              y="0"
-              width="470"
-              height="49"
-              fill="transparent"
-              strokeWidth="5"
-            ></Rect>
-          </Svg>
-        </ContainerNav>
-      </Nav>
+      <h1>hello word</h1>
     </div>
   );
 }

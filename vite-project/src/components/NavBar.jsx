@@ -1,16 +1,29 @@
-import { Nav } from "./Navbar";
-import { ContainerNav } from "./Navbar";
-import { NavButton } from "./Navbar";
-import { Svg } from "./Navbar";
-import { Rect } from "./Navbar";
+import { Link } from "react-router-dom";
+import { Nav } from "./NavbarStyle";
+import { ContainerNav } from "./NavbarStyle";
+import { NavButton } from "./NavbarStyle";
+import { Svg } from "./NavbarStyle";
+import { Rect } from "./NavbarStyle";
+
 function Navbar() {
   return (
     <Nav>
       <ContainerNav>
-        <NavButton>HOME</NavButton>
-        <NavButton>PROJETOS</NavButton>
-        <NavButton>SOBRE NÓS</NavButton>
-        <NavButton>CONTATO</NavButton>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <NavButton>HOME</NavButton>
+        </Link>
+        <Link to="./projetos" style={{ textDecoration: "none" }}>
+          <NavButton>PROJETOS</NavButton>
+        </Link>
+
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <NavButton>SOBRE NÓS</NavButton>
+        </Link>
+
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <NavButton>CONTATO</NavButton>
+        </Link>
+
         <Svg
           overflow="visible"
           width="100%"
