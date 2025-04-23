@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./containers/home";
 import Projetos from "./containers/projetos";
+import FaloeConosco from "./containers/faleconosco";
 import MyGlobalStyles from "./styles/globalStyles";
 
 createRoot(document.getElementById("root")).render(
@@ -13,6 +14,7 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projetos" element={<Projetos />} />
+        <Route path="/faleconosco" element={<FaloeConosco />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

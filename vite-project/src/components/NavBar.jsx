@@ -9,20 +9,13 @@ function Navbar() {
   return (
     <Nav>
       <ContainerNav>
-        <Link to="/" style={{ textDecoration: "none" }}>
-          <NavButton>HOME</NavButton>
-        </Link>
-        <Link to="./projetos" style={{ textDecoration: "none" }}>
-          <NavButton>PROJETOS</NavButton>
-        </Link>
+        <NavButton to="/">HOME</NavButton>
 
-        <Link to="/" style={{ textDecoration: "none" }}>
-          <NavButton>SOBRE NÓS</NavButton>
-        </Link>
+        <NavButton to="/projetos">PROJETOS</NavButton>
 
-        <Link to="/" style={{ textDecoration: "none" }}>
-          <NavButton>CONTATO</NavButton>
-        </Link>
+        <NavButton to="/faleconosco">CONTATO</NavButton>
+
+        <NavButton to="/noticias">NOTICIAS</NavButton>
 
         <Svg
           overflow="visible"

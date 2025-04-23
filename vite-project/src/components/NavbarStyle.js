@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Nav = styled.div`
   position: relative;
@@ -36,11 +37,12 @@ export const ContainerNav = styled.div`
   }
 `;
 
-export const NavButton = styled.div`
+export const NavButton = styled(Link)`
   padding: 0.5em 1.5em;
   color: #000000;
   cursor: pointer;
   transition: 0.1s;
+  text-decoration: none;
 
   &:hover {
     background: #fff3;
