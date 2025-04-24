@@ -29,7 +29,7 @@ function Navbar() {
             x="0"
             y="0"
             width="470"
-            height="49"
+            height="60"
             fill="transparent"
             strokeWidth="5"
           ></Rect>

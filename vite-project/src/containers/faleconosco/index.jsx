@@ -7,12 +7,15 @@ import {
   SubmitButton,
   DivInt,
 } from "./stylesFRC";
+import { Div } from "./stylesFRC";
+import { DivInfo } from "./stylesFRC";
+import { SubDiv } from "./stylesFRC";
 
 function FaloeConosco() {
   return (
-    <div>
-      <Navbar />
+    <Div>
       <DivInt>
+        <Navbar />
         <Form method="POST" action="./email.php">
           <FormTitle>Entre em contato</FormTitle>
 
@@ -31,9 +34,30 @@ function FaloeConosco() {
           </InputContainer>
 
           <SubmitButton type="submit">Enviar</SubmitButton>
+
+          <DivInfo>
+            <SubDiv>
+              <div>
+                <h3>Atendimento</h3>
+                <p>Segunda a sexta-feira</p>
+                <p>8h às 12h | 13h às 17h</p>
+              </div>
+              <div>
+                <h3>E-mail</h3>
+                <p>centroculturaldelidice@gmail.com</p>
+              </div>
+            </SubDiv>
+            <SubDiv>
+              <div>
+                <h3>Atendimento</h3>
+                <p>Segunda a sexta-feira</p>
+                <p>8h às 12h | 13h às 17h</p>
+              </div>
+            </SubDiv>
+          </DivInfo>
         </Form>
       </DivInt>
-    </div>
+    </Div>
   );
 }
 

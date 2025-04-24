@@ -1,14 +1,36 @@
 import styled from "styled-components";
+import BackgroundCachoeira from "./cachoeira.jpg";
 
+export const Div = styled.div`
+  position: relative; /* Necessário para o posicionamento do pseudo-elemento */
+  height: 100vh;
+  overflow: hidden; /* Garante que nada saia da div */
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(${BackgroundCachoeira});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px); /* Aplica o desfoque apenas à imagem */
+    z-index: 1; /* Coloca a imagem atrás do conteúdo */
+  }
+`;
 export const DivInt = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  align-content: center;
-  height: 90vh;
+  height: auto;
+  position: relative; /* Necessário para garantir que o conteúdo fique acima do pseudo-elemento */
+  z-index: 2; /* Garante que o conteúdo fique acima da imagem desfocada */
 `;
 export const Form = styled.form`
+  margin-top: 60px;
   display: flex;
   align-items: left;
   justify-content: center;
@@ -78,4 +100,15 @@ export const SignUpLink = styled.p`
   a {
     text-decoration: underline;
   }
+`;
+
+export const DivInfo = styled.div`
+  display: flex;
+  gap: 20px;
+`;
+
+export const SubDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 `;
