@@ -15,7 +15,7 @@ export const SubTitle = styled.h3`
   z-index: 2;
 `;
 
-export const Text = styled.h3`
+export const Text = styled.p`
   color: #212121;
 `;
 
@@ -88,16 +88,9 @@ export const SectionText = styled.section`
   text-align: center;
   justify-content: center;
   margin: 0 150px 0 0;
+  gap: 20px;
 
   & p {
     font-size: 1.2rem;
-  }
-`;
-
-export const DivImgFenix = styled.div`
-  width: 50vw;
-
-  & img {
-    width: 300px;
   }
 `;

@@ -9,7 +9,7 @@ import { Sectionflag } from "./styles";
 import { SectionText } from "./styles";
 import HomeCasaC from "./img/casacultura.png";
 import Fenix from "./img/ChatGPT Image Apr 21, 2025, 11_35_34 AM (1).png";
-import { DivImgFenix } from "./styles";
+// import { DivImgFenix } from "./styles";
 import Navbar from "../../components/Navbar";
 
 function Home() {
@@ -37,9 +37,9 @@ function Home() {
         </ImgHalf>
       </IntroSection>
       <SectionText>
-        <DivImgFenix>
+        <ImgHalf>
           <img src={Fenix} />
-        </DivImgFenix>
+        </ImgHalf>
 
         <ScreenHalf>
           <h1>História de Lídice</h1>
