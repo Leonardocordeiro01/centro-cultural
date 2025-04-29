@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import GinasticaCras from "./ginasticacras.jpg";
+import Coral from "./coral.jpg";
 
 export const DivInitial = styled.div`
   background: rgb(255, 255, 255);
@@ -40,6 +41,26 @@ export const DivImagem = styled.div`
   background-repeat: no-repeat;
   width: 100%;
   border-radius: 10px;
+
+  &:hover .hide-text {
+    color: transparent;
+    transition: 500ms;
+  }
+`;
+
+export const DivImagem2 = styled.div`
+  position: relative;
+  background-image: url(${Coral});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  border-radius: 10px;
+
+  &:hover .hide-text {
+    color: transparent;
+    transition: 500ms;
+  }
 `;
 
 export const SmallerTitleP = styled.h3`
@@ -47,6 +68,7 @@ export const SmallerTitleP = styled.h3`
   z-index: 2;
   font-size: 30px;
   width: 100%;
+  transition: 500ms;
 `;
 
 export const Text = styled.p`
@@ -54,6 +76,7 @@ export const Text = styled.p`
   z-index: 2;
   font-size: 20px;
   width: 100%;
+  transition: 500ms;
 `;
 
 export const PeliculaEscura = styled.div`

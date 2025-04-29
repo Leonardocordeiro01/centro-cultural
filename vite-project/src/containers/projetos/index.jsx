@@ -2,6 +2,7 @@ import Navbar from "../../components/Navbar";
 import { SubTitle, SmallerTitle } from "../home/styles";
 import { DivInitial } from "./stylesprojetos";
 import { DivImagem } from "./stylesprojetos";
+import { DivImagem2 } from "./stylesprojetos";
 import { DivBackimg } from "./stylesprojetos";
 import { PeliculaEscura } from "./stylesprojetos";
 import { Text } from "./stylesprojetos";
@@ -24,10 +25,27 @@ function Projetos() {
         <DivImagem>
           <PeliculaEscura />
           <ScreenHalf>
-            <SmallerTitleP>Oficinas do CRAS</SmallerTitleP>
-            <Text>ginástica, ritmos e coral da 3ª idade</Text>
+            <SmallerTitleP className="hide-text">
+              Oficinas do CRAS
+            </SmallerTitleP>
+            <Text className="hide-text">
+              ginástica, ritmos e coral da 3ª idade
+            </Text>
           </ScreenHalf>
         </DivImagem>
+      </DivBackimg>
+      <DivBackimg>
+        <DivImagem2>
+          <PeliculaEscura />
+          <ScreenHalf>
+            <SmallerTitleP className="hide-text">
+              Oficinas do CRAS
+            </SmallerTitleP>
+            <Text className="hide-text">
+              ginástica, ritmos e coral da 3ª idade
+            </Text>
+          </ScreenHalf>
+        </DivImagem2>
       </DivBackimg>
     </div>
   );
