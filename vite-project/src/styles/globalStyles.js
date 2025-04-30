@@ -16,7 +16,7 @@ p {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     color: #212121;
 }
 

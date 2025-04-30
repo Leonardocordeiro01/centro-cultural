@@ -3,6 +3,7 @@ import { SubTitle, SmallerTitle } from "../home/styles";
 import { DivInitial } from "./stylesprojetos";
 import { DivImagem } from "./stylesprojetos";
 import { DivImagem2 } from "./stylesprojetos";
+import { DivImagem3 } from "./stylesprojetos";
 import { DivBackimg } from "./stylesprojetos";
 import { PeliculaEscura } from "./stylesprojetos";
 import { Text } from "./stylesprojetos";
@@ -46,6 +47,14 @@ function Projetos() {
             </Text>
           </ScreenHalf>
         </DivImagem2>
+      </DivBackimg>
+      <DivBackimg>
+        <DivImagem3>
+          <PeliculaEscura />
+          <ScreenHalf>
+            <SmallerTitleP className="hide-text">Aulas de teatro</SmallerTitleP>
+          </ScreenHalf>
+        </DivImagem3>
       </DivBackimg>
     </div>
   );

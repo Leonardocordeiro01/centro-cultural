@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import GinasticaCras from "./ginasticacras.jpg";
 import Coral from "./coral.jpg";
+import Teatro from "./teatro.jpg";
 
 export const DivInitial = styled.div`
   background: rgb(255, 255, 255);
@@ -51,6 +52,21 @@ export const DivImagem = styled.div`
 export const DivImagem2 = styled.div`
   position: relative;
   background-image: url(${Coral});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  border-radius: 10px;
+
+  &:hover .hide-text {
+    color: transparent;
+    transition: 500ms;
+  }
+`;
+
+export const DivImagem3 = styled.div`
+  position: relative;
+  background-image: url(${Teatro});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
