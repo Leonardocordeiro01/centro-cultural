@@ -16,7 +16,26 @@ function FaloeConosco() {
     <Div>
       <DivInt>
         <Navbar />
-        <Form method="POST" action="./email.php">
+        <Form
+          onSubmit={async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const data = {
+              name: form.name.value,
+              email: form.email.value,
+              message: form.message.value,
+            };
+
+            const res = await fetch("/api/send-email", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(data),
+            });
+
+            const result = await res.json();
+            alert(result.message);
+          }}
+        >
           <FormTitle>Entre em contato</FormTitle>
 
           <InputContainer>
