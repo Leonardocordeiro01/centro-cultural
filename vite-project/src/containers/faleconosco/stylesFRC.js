@@ -17,7 +17,7 @@ export const Div = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(5px); /* Aplica o desfoque apenas à imagem */
+    filter: blur(4.5px); /* Aplica o desfoque apenas à imagem */
     z-index: 1; /* Coloca a imagem atrás do conteúdo */
   }
 `;
