@@ -3,7 +3,7 @@ import BackgroundCachoeira from "./cachoeira.jpg";
 
 export const Div = styled.div`
   position: relative; /* Necessário para o posicionamento do pseudo-elemento */
-  height: 100vh;
+  height: 100%;
   overflow: hidden; /* Garante que nada saia da div */
 
   &::before {
@@ -49,7 +49,7 @@ export const Form = styled.form`
 `;
 
 export const FormTitle = styled.p`
-  font-size: 2.25rem;
+  font-size: 6.25rem;
   line-height: 1.75rem;
   font-weight: 700;
   text-align: center;
