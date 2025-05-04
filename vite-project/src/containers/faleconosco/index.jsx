@@ -22,7 +22,7 @@ function FaloeConosco() {
     };
 
     try {
-      const res = await fetch("./api/send-email.js", {
+      const res = await fetch("api/send-email.js", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
