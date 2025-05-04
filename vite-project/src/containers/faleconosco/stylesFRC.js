@@ -13,7 +13,7 @@ export const Div = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(${BackgroundCachoeira});
+    /* background-image: url(${BackgroundCachoeira}); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,7 +49,7 @@ export const Form = styled.form`
 `;
 
 export const FormTitle = styled.p`
-  font-size: 6.25rem;
+  font-size: 2.25rem;
   line-height: 1.75rem;
   font-weight: 700;
   text-align: center;
