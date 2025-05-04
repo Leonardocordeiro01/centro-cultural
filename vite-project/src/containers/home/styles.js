@@ -25,7 +25,7 @@ export const IntroSection = styled.div`
   align-content: center;
   justify-content: center;
   align-items: center;
-  background: rgb(245, 5, 5);
+  background: #f5f5f5;
   gap: 30px;
 `;
 
