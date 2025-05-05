@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar";
+import Navbar from "../components/Navbar";
 import { SubTitle, SmallerTitle } from "../home/styles";
 import { DivInitial } from "./stylesprojetos";
 import { DivImagem } from "./stylesprojetos";
