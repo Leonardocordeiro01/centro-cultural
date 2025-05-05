@@ -3,7 +3,7 @@ import BackgroundCachoeira from "./cachoeira.jpg";
 
 export const Div = styled.div`
   position: relative; /* Necessário para o posicionamento do pseudo-elemento */
-  height: 200vh;
+  height: 110vh;
   overflow: hidden; /* Garante que nada saia da div */
 
   &::before {
