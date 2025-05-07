@@ -17,8 +17,8 @@ export const Div = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(4.5px); /* Aplica o desfoque apenas à imagem */
-    z-index: 1; /* Coloca a imagem atrás do conteúdo */
+    filter: blur(4.5px);
+    z-index: 1;
   }
 `;
 export const DivInt = styled.div`
@@ -26,8 +26,8 @@ export const DivInt = styled.div`
   flex-direction: column;
   align-items: center;
   height: auto;
-  position: relative; /* Necessário para garantir que o conteúdo fique acima do pseudo-elemento */
-  z-index: 2; /* Garante que o conteúdo fique acima da imagem desfocada */
+  position: relative;
+  z-index: 2;
 `;
 export const Form = styled.form`
   margin-top: 60px;

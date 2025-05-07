@@ -4,15 +4,30 @@ import BandeiraTcheca from "./img/bandeirastb.png";
 export const Title = styled.h1`
   color: #212121;
   z-index: 2;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 `;
 
 export const SmallerTitle = styled.h2`
   color: #212121;
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+    text-align: center;
+  }
 `;
 
 export const SubTitle = styled.h3`
   color: #212121;
   z-index: 2;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 `;
 
 export const Text = styled.p`
@@ -27,6 +42,13 @@ export const IntroSection = styled.div`
   align-items: center;
   background: #f5f5f5;
   gap: 30px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    margin-top: 50px;
+  }
 `;
 
 export const ScreenHalf = styled.div`
@@ -37,6 +59,13 @@ export const ScreenHalf = styled.div`
   justify-content: center;
   text-align: right;
   gap: 25px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 0 10px;
+  }
 `;
 
 export const ImgHalf = styled.div`
@@ -44,6 +73,19 @@ export const ImgHalf = styled.div`
   height: 70vh;
   display: flex;
   padding: 0;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+
+    img {
+      width: 90%;
+      height: auto;
+      object-fit: contain;
+      margin: 50px 0 20px 0;
+    }
+  }
 `;
 
 export const Sectionflag = styled.section`
@@ -78,6 +120,11 @@ export const Sectionflag = styled.section`
     text-align: center;
     align-items: center;
   }
+
+  @media (max-width: 768px) {
+    height: auto;
+    padding: 20px 10px;
+  }
 `;
 
 export const SectionText = styled.section`
@@ -92,5 +139,15 @@ export const SectionText = styled.section`
 
   & p {
     font-size: 1.2rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin: 0 20px;
+    height: auto;
+    margin-bottom: 50px;
+    p {
+      font-size: 1rem;
+    }
   }
 `;
