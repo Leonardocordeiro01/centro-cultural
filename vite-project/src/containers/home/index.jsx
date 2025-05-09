@@ -11,8 +11,15 @@ import HomeCasaC from "./img/casacultura.png";
 import Fenix from "./img/ChatGPT Image Apr 21, 2025, 11_35_34 AM (1).png";
 // import { DivImgFenix } from "./styles";
 import Navbar from "../components/Navbar";
+import Footer from "../components/footer";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Home() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div>
       <Sectionflag>
@@ -21,7 +28,7 @@ function Home() {
       </Sectionflag>
       <Navbar />
       <IntroSection>
-        <ScreenHalf>
+        <ScreenHalf data-aos="fade-left">
           <SmallerTitle>
             Bem-vindo ao site do Centro Cultural de Lídice
           </SmallerTitle>
@@ -41,7 +48,7 @@ function Home() {
           <img src={Fenix} />
         </ImgHalf>
 
-        <ScreenHalf>
+        <ScreenHalf data-aos="fade-right">
           <h1>História de Lídice</h1>
           <p>
             Originalmente chamada Santo Antônio do Capivari, a localidade foi
@@ -67,6 +74,7 @@ function Home() {
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
+      <Footer data-aos="fade-up" data-aos-duration="3000" />
     </div>
   );
 }

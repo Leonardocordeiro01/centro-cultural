@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import { NoticiasFacebook } from "./stylesnoticias";
+import Footer from "../components/footer";
 
 export default function NoticiasFecebook() {
   useEffect(() => {
@@ -18,28 +19,32 @@ export default function NoticiasFecebook() {
   }, []);
 
   return (
-    <NoticiasFacebook>
-      <Navbar />
-      <div
-        style={{
-          flex: 1,
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <div id="fb-root"></div>
+    <div>
+      <NoticiasFacebook>
+        <Navbar />
         <div
-          className="fb-page"
-          data-href="https://www.facebook.com/PrefeituradeRioClaroRJ/?locale=pt_BR"
-          data-tabs="timeline"
-          data-width="600"
-          data-small-header="false"
-          data-adapt-container-width="true"
-          data-hide-cover="false"
-          data-show-facepile="true"
-        ></div>
-      </div>
-    </NoticiasFacebook>
+          style={{
+            flex: 1,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <div id="fb-root"></div>
+          <div
+            className="fb-page"
+            data-href="https://www.facebook.com/PrefeituradeRioClaroRJ/?locale=pt_BR"
+            data-tabs="timeline"
+            data-width="600"
+            data-height="600"
+            data-small-header="false"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="true"
+          ></div>
+        </div>
+      </NoticiasFacebook>
+      <Footer />
+    </div>
   );
 }

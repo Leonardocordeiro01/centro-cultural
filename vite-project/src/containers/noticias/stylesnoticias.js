@@ -4,6 +4,7 @@ import centro from "./image.png";
 export const NoticiasFacebook = styled.div`
   position: relative;
   overflow: hidden;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

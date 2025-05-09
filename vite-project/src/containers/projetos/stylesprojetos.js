@@ -2,6 +2,22 @@ import styled from "styled-components";
 import GinasticaCras from "./ginasticacras.jpg";
 import Coral from "./coral.jpg";
 import Teatro from "./teatro.jpg";
+import FundoCachoeira from "./image.png";
+
+export const DivBackgrondImg = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-image: url(${FundoCachoeira});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(4.5px);
+  z-index: -1;
+`;
 
 export const DivInitial = styled.div`
   background: rgb(255, 255, 255);
@@ -21,7 +37,7 @@ export const DivInitial = styled.div`
 `;
 
 export const DivBackimg = styled.div`
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 3px solid rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -98,7 +114,7 @@ export const PeliculaEscura = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   transition: 500ms;
 

@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/footer";
 import {
   Form,
   FormTitle,
@@ -43,61 +44,69 @@ function FaloeConosco() {
   };
 
   return (
-    <Div>
-      <DivInt>
-        <Navbar />
-        <Form onSubmit={handleSubmit}>
-          <FormTitle>Entre em contato</FormTitle>
+    <div>
+      <Div>
+        <DivInt>
+          <Navbar />
+          <Form onSubmit={handleSubmit}>
+            <FormTitle>Entre em contato</FormTitle>
 
-          <InputContainer>
-            <Input type="text" name="name" placeholder="Enviar Nome" required />
-            <span></span>
-          </InputContainer>
+            <InputContainer>
+              <Input
+                type="text"
+                name="name"
+                placeholder="Enviar Nome"
+                required
+              />
+              <span></span>
+            </InputContainer>
 
-          <InputContainer>
-            <Input
-              type="email"
-              name="email"
-              placeholder="Enviar email"
-              required
-            />
-            <span></span>
-          </InputContainer>
+            <InputContainer>
+              <Input
+                type="email"
+                name="email"
+                placeholder="Enviar email"
+                required
+              />
+              <span></span>
+            </InputContainer>
 
-          <InputContainer>
-            <Input
-              type="text"
-              name="message"
-              placeholder="Enviar Mensagem"
-              required
-            />
-          </InputContainer>
+            <InputContainer>
+              <Input
+                type="text"
+                name="message"
+                placeholder="Enviar Mensagem"
+                required
+              />
+            </InputContainer>
 
-          <SubmitButton type="submit">Enviar</SubmitButton>
+            <SubmitButton type="submit">Enviar</SubmitButton>
 
-          <DivInfo>
-            <SubDiv>
-              <div>
-                <h3>Atendimento</h3>
-                <p>Segunda a sexta-feira</p>
-                <p>8h às 12h | 13h às 17h</p>
-              </div>
-              <div>
-                <h3>E-mail</h3>
-                <p>centroculturaldelidice@gmail.com</p>
-              </div>
-            </SubDiv>
-            <SubDiv>
-              <div>
-                <h3>Atendimento</h3>
-                <p>Segunda a sexta-feira</p>
-                <p>8h às 12h | 13h às 17h</p>
-              </div>
-            </SubDiv>
-          </DivInfo>
-        </Form>
-      </DivInt>
-    </Div>
+            <DivInfo>
+              <SubDiv>
+                <div>
+                  <h3>Atendimento</h3>
+                  <p>Segunda a sexta-feira</p>
+                  <p>8h às 12h | 13h às 17h</p>
+                </div>
+                <div>
+                  <h3>E-mail</h3>
+                  <p>centroculturaldelidice@gmail.com</p>
+                </div>
+              </SubDiv>
+              <SubDiv>
+                <div>
+                  <h3>Atendimento</h3>
+                  <p>Segunda a sexta-feira</p>
+                  <p>8h às 12h | 13h às 17h</p>
+                </div>
+              </SubDiv>
+            </DivInfo>
+          </Form>
+        </DivInt>
+      </Div>
+      <Footer />
+    </div>
   );
 }
 

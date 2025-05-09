@@ -9,10 +9,13 @@ import { PeliculaEscura } from "./stylesprojetos";
 import { Text } from "./stylesprojetos";
 import { SmallerTitleP } from "./stylesprojetos";
 import { ScreenHalf } from "./stylesprojetos";
+import Footer from "../components/footer";
+import { DivBackgrondImg } from "./stylesprojetos";
 
 function Projetos() {
   return (
-    <div>
+    <div style={{ position: "relative" }}>
+      <DivBackgrondImg />
       <Navbar />
       <DivInitial>
         <SmallerTitle>Conheça nossas atividades e projetos</SmallerTitle>
@@ -56,6 +59,7 @@ function Projetos() {
           </ScreenHalf>
         </DivImagem3>
       </DivBackimg>
+      <Footer />
     </div>
   );
 }
