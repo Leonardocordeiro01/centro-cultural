@@ -37,7 +37,7 @@ export const DivInitial = styled.div`
 `;
 
 export const DivBackimg = styled.div`
-  border: 3px solid rgba(0, 0, 0, 0.2);
+  background: white;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -114,12 +114,13 @@ export const PeliculaEscura = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
   border-radius: 10px;
-  transition: 500ms;
+  opacity: 1;
+  transition: opacity 500ms ease;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0.1;
   }
 `;
 
