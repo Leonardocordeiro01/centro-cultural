@@ -11,6 +11,7 @@ import { SmallerTitleP } from "./stylesprojetos";
 import { ScreenHalf } from "./stylesprojetos";
 import Footer from "../components/footer";
 import { DivBackgrondImg } from "./stylesprojetos";
+import { ButtonCnt } from "./stylesprojetos";
 
 function Projetos() {
   return (
@@ -40,6 +41,13 @@ function Projetos() {
               mobilidade e o bem-estar geral, promovendo também momentos de
               socialização e incentivo à vida ativa.
             </Text>
+            <ButtonCnt
+              href={`https://wa.me/${"55 24 3334-1121"}?text=${"Gostaria de saber mais sobre a ginastica do cras"}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Botão do WhatsApp
+            </ButtonCnt>
           </ScreenHalf>
         </DivImagem>
       </DivBackimg>
@@ -58,6 +66,13 @@ function Projetos() {
               momentos de lazer e aprendizado. É um espaço acolhedor onde vozes
               se unem para criar experiências sonoras significativas.
             </Text>
+            <ButtonCnt
+              href={`https://wa.me/${"55243334-1121"}?text=${"Gostaria de saber mais sobre a Coral do cras"}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Botão do WhatsApp
+            </ButtonCnt>
           </ScreenHalf>
         </DivImagem2>
       </DivBackimg>
@@ -74,6 +89,13 @@ function Projetos() {
               equipe e vivenciam o universo das artes cênicas, fortalecendo sua
               identidade e vínculo com a cultura local.
             </Text>
+            <ButtonCnt
+              href={`https://wa.me/${"552499823-5748"}?text=${"Olá, gostaria de saber mais sobre as aulas de teatro"}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Botão do WhatsApp
+            </ButtonCnt>
           </ScreenHalf>
         </DivImagem3>
       </DivBackimg>

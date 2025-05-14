@@ -106,6 +106,7 @@ export const Text = styled.p`
   font-size: 20px;
   width: 100%;
   transition: 500ms;
+  margin-bottom: 20px;
 `;
 
 export const PeliculaEscura = styled.div`
@@ -129,14 +130,29 @@ export const ScreenHalf = styled.div`
   width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: first baseline;
+  align-items: left;
   padding-left: 30px;
   padding-top: 30px;
   gap: 15px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1168px) {
     height: auto;
     padding: 20px;
+    width: 100%;
   }
+`;
+
+export const ButtonCnt = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 50%;
+  height: 40px;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  z-index: 1;
+  font-size: medium;
 `;

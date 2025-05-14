@@ -27,7 +27,7 @@ function Footer() {
 
         <FooterSection>
           <FooterTitle>Contato</FooterTitle>
-          <FooterInfoText>Casa da Cultura de Lídice</FooterInfoText>
+          <FooterInfoText>Centro Cultural de Lídice</FooterInfoText>
           <FooterInfoText>
             Rodovia Francisco Saturnino Braga, s/n°
             <br />
