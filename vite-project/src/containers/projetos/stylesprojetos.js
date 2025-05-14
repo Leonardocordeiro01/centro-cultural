@@ -70,6 +70,14 @@ const baseImagem = `
   &:hover .hide-text {
     color: transparent;
     transition: 500ms;
+     background-color: transparent;
+  }
+
+  & .ButtomCnt {
+  background-color: transparent;
+  color:rgba(0, 0, 0, 0);
+    transition: 500ms;
+     background-color: transparent;
   }
 
   @media (max-width: 480px) {
@@ -155,4 +163,5 @@ export const ButtonCnt = styled.a`
   border-radius: 10px;
   z-index: 1;
   font-size: medium;
+  transition: 500ms;
 `;

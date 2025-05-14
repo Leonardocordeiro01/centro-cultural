@@ -42,6 +42,7 @@ function Projetos() {
               socialização e incentivo à vida ativa.
             </Text>
             <ButtonCnt
+              className="hide-text"
               href={`https://wa.me/${"55 24 3334-1121"}?text=${"Gostaria de saber mais sobre a ginastica do cras"}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -67,6 +68,7 @@ function Projetos() {
               se unem para criar experiências sonoras significativas.
             </Text>
             <ButtonCnt
+              className="hide-text"
               href={`https://wa.me/${"55243334-1121"}?text=${"Gostaria de saber mais sobre a Coral do cras"}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -90,6 +92,7 @@ function Projetos() {
               identidade e vínculo com a cultura local.
             </Text>
             <ButtonCnt
+              className="hide-text"
               href={`https://wa.me/${"552499823-5748"}?text=${"Olá, gostaria de saber mais sobre as aulas de teatro"}`}
               target="_blank"
               rel="noopener noreferrer"
