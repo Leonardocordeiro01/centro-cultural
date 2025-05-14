@@ -126,7 +126,7 @@ export const PeliculaEscura = styled.div`
 
 export const ScreenHalf = styled.div`
   height: 80vh;
-  width: auto;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

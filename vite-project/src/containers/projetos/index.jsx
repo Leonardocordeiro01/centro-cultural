@@ -30,10 +30,15 @@ function Projetos() {
           <PeliculaEscura />
           <ScreenHalf>
             <SmallerTitleP className="hide-text">
-              Oficinas do CRAS
+              Oficinas do CRAS – Ginástica
             </SmallerTitleP>
             <Text className="hide-text">
-              ginástica, ritmos e coral da 3ª idade
+              A oficina de ginástica promovida pelo CRAS visa estimular a
+              prática de atividades físicas regulares, contribuindo para a saúde
+              física e mental dos participantes. Com exercícios leves e
+              adaptados, a proposta busca melhorar o condicionamento, a
+              mobilidade e o bem-estar geral, promovendo também momentos de
+              socialização e incentivo à vida ativa.
             </Text>
           </ScreenHalf>
         </DivImagem>
@@ -43,10 +48,15 @@ function Projetos() {
           <PeliculaEscura />
           <ScreenHalf>
             <SmallerTitleP className="hide-text">
-              Oficinas do CRAS
+              Oficinas do CRAS - Coral
             </SmallerTitleP>
             <Text className="hide-text">
-              ginástica, ritmos e coral da 3ª idade
+              A oficina de coral oferece aos participantes a oportunidade de
+              explorar a música por meio do canto coletivo. Com foco na harmonia
+              vocal, respiração e expressão musical, a atividade fortalece a
+              convivência em grupo, estimula a sensibilidade artística e promove
+              momentos de lazer e aprendizado. É um espaço acolhedor onde vozes
+              se unem para criar experiências sonoras significativas.
             </Text>
           </ScreenHalf>
         </DivImagem2>
@@ -56,6 +66,14 @@ function Projetos() {
           <PeliculaEscura />
           <ScreenHalf>
             <SmallerTitleP className="hide-text">Aulas de teatro</SmallerTitleP>
+            <Text className="hide-text">
+              A oficina de teatro proporciona um espaço criativo para que os
+              participantes desenvolvam expressão, autoestima e habilidades
+              sociais. Por meio de dinâmicas teatrais e encenações, os
+              envolvidos exploram diferentes formas de comunicação, trabalham em
+              equipe e vivenciam o universo das artes cênicas, fortalecendo sua
+              identidade e vínculo com a cultura local.
+            </Text>
           </ScreenHalf>
         </DivImagem3>
       </DivBackimg>
