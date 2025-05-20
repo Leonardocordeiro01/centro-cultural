@@ -14,7 +14,7 @@ export default async function handler(req, res) {
   
       const mailOptions = {
         from: email,
-        to: "contato@cordtech.com.br", // DESTINATÁRIO
+        to: "centroculturaldelidice@gmail.com", // DESTINATÁRIO
         subject: "contato - Site Centro Cultural",
         text: `Nome: ${name}\nEmail: ${email}\nMensagem: ${message}`,
       };
