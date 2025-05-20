@@ -1,23 +1,18 @@
-import { Link } from "react-router-dom";
-import { Nav } from "./NavbarStyle";
-import { ContainerNav } from "./NavbarStyle";
-import { NavButton } from "./NavbarStyle";
-import { Svg } from "./NavbarStyle";
-import { Rect } from "./NavbarStyle";
+import React, { useState } from "react";
+import { Nav, ContainerNav, NavButton, Svg, Rect, Hamburger, MobileMenu } from "./NavbarStyle";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <Nav>
       <ContainerNav>
         <NavButton to="/">HOME</NavButton>
-
         <NavButton to="/projetos">PROJETOS</NavButton>
-
         <NavButton to="/faleconosco">CONTATO</NavButton>
+        <NavButton to="/noticias">NOTÍCIAS</NavButton>
 
-        <NavButton to="/noticias">NOTICIAS</NavButton>
-
-        <Svg
+         <Svg
           overflow="visible"
           width="100%"
           height="60"
@@ -34,9 +29,28 @@ function Navbar() {
             strokeWidth="5"
           ></Rect>
         </Svg>
-      </ContainerNav>
+        </ContainerNav>
+
+      <Hamburger>
+        <input
+          type="checkbox"
+          checked={menuOpen}
+          onChange={() => setMenuOpen(!menuOpen)}
+        />
+        <span></span>
+        <span></span>
+        <span></span>
+      </Hamburger>
+
+      <MobileMenu open={menuOpen}>
+        <NavButton to="/" onClick={() => setMenuOpen(false)}>Início</NavButton>
+        <NavButton to="/projetos" onClick={() => setMenuOpen(false)}>Projetos</NavButton>
+        <NavButton to="/faleconosco" onClick={() => setMenuOpen(false)}>Contato</NavButton>
+        <NavButton to="/noticias" onClick={() => setMenuOpen(false)}>Notícias</NavButton>
+      </MobileMenu>
     </Nav>
   );
 }
 
 export default Navbar;
+  

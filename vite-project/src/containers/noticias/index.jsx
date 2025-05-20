@@ -20,22 +20,16 @@ export default function NoticiasFecebook() {
 
   return (
     <div>
+      <Navbar />
       <NoticiasFacebook>
-        <Navbar />
-        <div
-          style={{
-            flex: 1,
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
+        
+        <div className="fb-container"
         >
           <div id="fb-root"></div>
           <div
             className="fb-page"
             data-href="https://www.facebook.com/PrefeituradeRioClaroRJ/?locale=pt_BR"
             data-tabs="timeline"
-            data-width="600"
             data-height="600"
             data-small-header="false"
             data-adapt-container-width="true"

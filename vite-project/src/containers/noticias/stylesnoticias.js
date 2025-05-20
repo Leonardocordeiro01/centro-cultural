@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import centro from "./image.png";
 
+
+
 export const NoticiasFacebook = styled.div`
   position: relative;
   overflow: hidden;
@@ -9,6 +11,7 @@ export const NoticiasFacebook = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   &::before {
     content: "";
     position: absolute;
@@ -21,10 +24,23 @@ export const NoticiasFacebook = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     filter: blur(4.5px);
+    z-index: 1;
   }
 
   > * {
     position: relative;
     z-index: 2;
+  }
+
+  .fb-container {
+
+  }
+
+  .fb-page {
+    width: 100% !important;
+  }
+
+  iframe {
+    width: 100% !important;
   }
 `;

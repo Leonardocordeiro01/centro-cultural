@@ -24,11 +24,12 @@ function Home() {
   }, []);
   return (
     <div>
+      <Navbar />
       <Sectionflag>
         <Title>Centro Cultural</Title>
         <SubTitle>Ludmila Amalia Batova Arambasic</SubTitle>
       </Sectionflag>
-      <Navbar />
+      
       <IntroSection>
         <ScreenHalf data-aos="fade-left">
           <SmallerTitle>
