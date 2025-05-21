@@ -94,6 +94,7 @@ export const Hamburger = styled.label`
   cursor: pointer;
   display: block;
   z-index: 1100;
+  overflow-x: hidden;
   input {
     display: none;
   }
@@ -169,6 +170,7 @@ position: fixed; /* ocupa a tela toda */
   justify-content: center;
   padding: 1rem 0;
   z-index: 1000;
+  overflow-x: hidden;
   
 
   a {
