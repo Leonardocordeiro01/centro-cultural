@@ -94,7 +94,6 @@ export const Hamburger = styled.label`
   cursor: pointer;
   display: block;
   z-index: 1100;
-  overflow: hidden;
   input {
     display: none;
   }
