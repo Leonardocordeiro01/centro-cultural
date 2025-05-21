@@ -169,7 +169,6 @@ position: fixed; /* ocupa a tela toda */
   justify-content: center;
   padding: 1rem 0;
   z-index: 1000;
-  overflow: hidden;
   
 
   a {
